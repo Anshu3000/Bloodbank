@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Bloodbank</string>
+    <string name="user1">username...</string>
+    <string name="pass21">Password</string>
+    <string name="use">"if you donate a <b>money</b> you give a <b>food</b> \n \t if you donate a <b>blood </b>you give a <b>life</b>"</string>
+    <string name="con">Confirm</string>
 </resources>
