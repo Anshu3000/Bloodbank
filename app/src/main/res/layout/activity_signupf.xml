@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Signupf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/bloodlogo"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/logo"
+            android:layout_height="wrap_content"/>
+
+         <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/usernamesign"
+             android:layout_width="match_parent"
+             android:layout_marginTop="10dp"
+             app:counterMaxLength="15"
+              app:counterEnabled="true"
+             android:padding="10dp"
+             app:errorEnabled="true"
+             android:layout_height="wrap_content">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:hint="@string/Username"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userphone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:counterMaxLength="10"
+            app:counterEnabled="true"
+            android:padding="10dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:maxLength="10"
+                android:inputType="number"
+                android:hint="@string/Phoneno"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/useraddress"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+             app:counterEnabled="true"
+            android:padding="10dp"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:hint="@string/Address"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userpasswo"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:counterMaxLength="15"
+            app:counterEnabled="true"
+            android:padding="10dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:hint="@string/pass21"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <Spinner
+           android:id="@+id/bloodgroup1"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content"
+           android:scrollbars="vertical"
+           android:layout_margin="10dp"
+           android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+
+            android:padding="10dp"
+           style="@style/Widget.AppCompat.Spinner.Underlined"
+           />
+
+        <Button
+            android:id="@+id/signing1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backfocu"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:onClick="sign123"
+            android:layout_height="wrap_content"
+            android:text="@string/con"
+             />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

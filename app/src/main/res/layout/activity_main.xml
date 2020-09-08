@@ -73,6 +73,32 @@
              android:text="@string/con"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="160dp"
+             android:gravity="center"
+             android:padding="10dp"
+            android:textStyle="bold"
+            android:text="@string/or"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/sign1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sign1u"
+             android:textStyle="bold"
+            android:textSize="30sp"
+             android:padding="5dp"
+             android:onClick="sign1"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/outercolor"
+            />
+
+
     </LinearLayout>
 
 </ScrollView>

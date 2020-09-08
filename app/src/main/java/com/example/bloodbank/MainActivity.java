@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"done"+t1.getEditText().getText()+" /"+t2.getEditText().getText(),Toast.LENGTH_SHORT).show();
 
 
-        StringRequest str=new StringRequest(Request.Method.POST, "https://anshu1234.000webhostapp.com/regis.php",
+        StringRequest str=new StringRequest(Request.Method.POST, "https://anshu1234.000webhostapp.com/logi.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -106,4 +107,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void sign1(View view) {
+       startActivity(new Intent(MainActivity.this,Signupf.class));
+      }
 }
